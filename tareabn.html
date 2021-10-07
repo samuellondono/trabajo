@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>trabajo</title>
+	<style>
+
+		.boto{
+			position: absolute;
+top: 250px;
+left: 550px;
+height:50px;
+width:150px;
+background:red;
+color: black;
+font-size: 20px;
+		}
+		.boto1{
+			position: absolute;
+top: 250px;
+left: 750px;
+height:50px;
+width:150px;
+background: lightgreen;
+color: black;
+		}
+		.papitas{
+			position: absolute;
+top: 40px;
+left: 550px;
+height:50px;
+width:150px;
+background:lightblue;
+color: black;
+font-size: 20px;
+
+
+		}
+		.chocolatina{
+			position: absolute;
+top: 70px;
+left: 550px;
+height:50px;
+width:150px;
+background:lightblue;
+color: black;
+font-size: 20px;
+
+
+
+
+		}
+
+		.doritos{
+			position: absolute;
+top: 100px;
+left: 550px;
+height:50px;
+width:150px;
+background: lightblue;
+color: black;
+font-size: 20px;
+
+		}
+		
+		.producto1{
+			position: absolute;
+top: 180px;
+left: 450px;
+height:25px;
+width:100px;
+background: lightRed;
+font-size: 20px;
+		}
+		.producto2{
+			position: absolute;
+top: 180px;
+left: 600px;
+height:25px;
+width:100px;
+background: lightRed;
+font-size: 20px;
+
+
+		}
+		.producto3{
+position: absolute;
+top: 180px;
+left: 750px;
+height:25px;
+width:100px;
+font-size: 20px;
+
+background: lightRed;
+
+
+		}
+
+				.producto4{
+position: absolute;
+top: 180px;
+left: 900px;
+height:25px;
+width:100px;
+background: lightRed;
+font-size: 20px;
+
+
+
+		}
+		.papito{
+position: absolute;
+top: 40px;
+left: 750px;
+height:100px;
+width:150px;
+background:pink;
+color: black;
+font-size: 30px;
+
+
+
+
+		}
+
+
+
+
+
+
+
+	</style>
+</head>
+<body>
+	<form>
+		<center>
+		<div><input type="text" class="producto1" id="producto"placeholder="producto"></input></div>
+		<div><input type="text" id="cantidad" class="producto2" placeholder="cantidad"></input></div>
+		<div><input type="text" id="precio" class="producto3" placeholder="precio"></input></div>
+		<div><input type="text" id="dinero" class="producto4" placeholder="dinero"></input></div>
+		<div class="abuela"></div>
+		<div class="papito">solo hay 10 por cada producto</div>
+	<div id="papita" class="papitas" id="papitas">Papitas=2500</div>
+	<div id="chocolatin"  class="chocolatina " id="chocolatina">Chocolatina=900</div>
+	<div id="dorito"class="doritos" id="doritos">Doritos=2600</div>
+	<div class="boto" onclick="calcu()">	total</div>
+	<div class="boto1" onclick="calcu()" id="sfsf"></div></center>
+	</form>
+	<script>
+
+		function calcu() {
+	x=(producto.value)
+	y=Number(cantidad.value)
+	z=Number(precio.value)
+	w=Number(dinero.value)
+
+
+
+	ct=10
+	cr=10
+	cc=10
+	if (x="producto") {
+		if (y<=ct) {
+			amino=y*z
+			resul=amino-w
+			sfsf.innerHTML="compraste:"+ y +" y tiens que pagar:"+amino
+}
+if (y<=cr) {
+			amino=y*z
+			resul=amino-w
+			sfsf.innerHTML="compraste:"+ y +" y tienes que pagar:"+amino
+}
+if (y<=cc) {
+			amino=y*z
+			resul=amino-w
+			sfsf.innerHTML="compraste:"+ y +" y tienes que pagar:"+amino+"y tu devuelta es"+resul
+}
+
+		}
+	}
+	</script>
+
+</body>
+</html>
